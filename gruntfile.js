@@ -4,8 +4,8 @@ module.exports = function (grunt) {
         clean: ['build'],
         babel: {
             options: {
-                sourceMap: false,
-                plugins: ['object-assign']
+                plugins: ['array-includes'],
+                sourceMap: false
             },
             dist: {
                 files: [{
@@ -15,17 +15,6 @@ module.exports = function (grunt) {
                     dest: 'build',
                     ext: '.js'
                 }]
-            }
-        },
-        mocha_istanbul: {
-            coverage: {
-                src: ['test/*.spec.js'],
-                options: {
-                    scriptPath: require.resolve('isparta/bin/isparta'),
-                    reporter: 'spec',
-                    mochaOptions: ['--compilers', 'js:babel/register', '--recursive'],
-                    require: ['should']
-                }
             }
         },
         watch: {
