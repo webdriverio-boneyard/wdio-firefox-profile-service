@@ -27,7 +27,7 @@ module.exports = function (grunt) {
             options: {
                 parser: 'babel-eslint'
             },
-            target: ['index.js']
+            target: ['lib/*.js']
         },
         contributors: {
             options: {
@@ -44,12 +44,11 @@ module.exports = function (grunt) {
 
     require('load-grunt-tasks')(grunt)
     grunt.registerTask('default', ['build'])
-    grunt.registerTask('build', 'Build wdio-sauce-service', function () {
+    grunt.registerTask('build', 'Build wdio-firefox-profile-service', function () {
         grunt.task.run([
             'eslint',
             'clean',
-            'babel',
-            'mocha_istanbul'
+            'babel'
         ])
     })
     grunt.registerTask('release', 'Bump and tag version', function (type) {
