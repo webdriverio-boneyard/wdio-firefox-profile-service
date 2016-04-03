@@ -1,0 +1,20 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet type="text/css" href="chrome://global/skin/" ?>
+<?xml-stylesheet type="text/css"
+  href="chrome://WebdriverIOTestExtension/skin/browserOverlay.css" ?>
+
+<!DOCTYPE overlay SYSTEM
+  "chrome://WebdriverIOTestExtension/locale/browserOverlay.dtd">
+
+<overlay id="WebdriverIOTestExtension-browser-overlay"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+
+  <script type="application/x-javascript"
+    src="chrome://WebdriverIOTestExtension/content/browserOverlay.js" />
+
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="WebdriverIOTestExtension-string-bundle"
+      src="chrome://WebdriverIOTestExtension/locale/browserOverlay.properties" />
+  </stringbundleset>
+</overlay>

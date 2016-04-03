@@ -4,5 +4,10 @@
     "indent": [2, 4]
   },
   "parser": "babel-eslint",
-  "globals": {}
+  "globals": {
+    "expect": true,
+    "describe": true,
+    "it": true,
+    "browser": true
+  }
 }

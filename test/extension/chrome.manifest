@@ -1,0 +1,5 @@
+content   WebdriverIOTestExtension                content/
+skin      WebdriverIOTestExtension  classic/1.0   skin/
+locale    WebdriverIOTestExtension  en-US         locale/en-US/
+
+overlay chrome://browser/content/browser.xul  chrome://WebdriverIOTestExtension/content/browserOverlay.xul
