@@ -1,4 +1,5 @@
 var chai = require('chai')
+var path = require('path')
 
 exports.config = {
     specs: ['./test/test.spec.js'],
@@ -13,12 +14,11 @@ exports.config = {
         require('../launcher')
     ],
     firefoxProfile: {
-        extensions: [__dirname + '/fixtures/WebdriverIOTestExtension.xpi'],
+        extensions: [path.join(__dirname, '/fixtures/WebdriverIOTestExtension.xpi')],
         'browser.startup.homepage': 'http://webdriver.io'
     },
     mochaOpts: {
         timeout: 9999999,
-        // compilers: ['js:babel-core/register'],
         ui: 'bdd'
     },
     before: function () {
