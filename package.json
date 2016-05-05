@@ -7,6 +7,8 @@
   "homepage": "http://webdriver.io",
   "main": "index.js",
   "scripts": {
+    "build": "grunt build",
+    "prepublish": "npm prune && npm run build && npm run test",
     "test": "wdio test/wdio.conf.js"
   },
   "repository": {
