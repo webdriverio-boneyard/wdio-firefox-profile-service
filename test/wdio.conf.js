@@ -2,6 +2,8 @@ var chai = require('chai')
 var path = require('path')
 
 exports.config = {
+    port: 4445,
+    host: 'localhost',
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
 
@@ -11,7 +13,7 @@ exports.config = {
         platform: 'OS X 10.11',
         version: '45.0',
         name: 'wdio-firefox-profile-service',
-        build: 'wdio-firefox-profile-service - ' + process.env.BUILD_NUMBER
+        build: 'wdio-firefox-profile-service - ' + process.env.TRAVIS_BUILD_NUMBER
     }],
     baseUrl: 'http://google.com',
     framework: 'mocha',
