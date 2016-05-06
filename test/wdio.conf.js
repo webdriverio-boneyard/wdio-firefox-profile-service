@@ -9,7 +9,9 @@ exports.config = {
     capabilities: [{
         browserName: 'firefox',
         platform: 'OS X 10.11',
-        version: '45.0'
+        version: '45.0',
+        name: 'wdio-firefox-profile-service',
+        build: 'wdio-firefox-profile-service - ' + process.env.BUILD_NUMBER
     }],
     baseUrl: 'http://google.com',
     framework: 'mocha',
