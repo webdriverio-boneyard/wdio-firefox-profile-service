@@ -13,7 +13,8 @@ exports.config = {
         platform: 'OS X 10.11',
         version: '45.0',
         name: 'wdio-firefox-profile-service',
-        build: 'wdio-firefox-profile-service - ' + process.env.TRAVIS_BUILD_NUMBER
+        build: 'wdio-firefox-profile-service - ' + process.env.TRAVIS_BUILD_NUMBER,
+        'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER
     }],
     baseUrl: 'http://google.com',
     framework: 'mocha',
