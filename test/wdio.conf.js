@@ -2,9 +2,14 @@ var chai = require('chai')
 var path = require('path')
 
 exports.config = {
+    user: process.env.SAUCE_USERNAME,
+    key: process.env.SAUCE_ACCESS_KEY,
+
     specs: ['./test/test.spec.js'],
     capabilities: [{
-        browserName: 'firefox'
+        browserName: 'firefox',
+        platform: 'OS X 10.11',
+        version: '45.0'
     }],
     baseUrl: 'http://google.com',
     framework: 'mocha',
