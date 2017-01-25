@@ -35,8 +35,11 @@ export.config = {
   // ...
   services: ['firefox-profile'],
   firefoxProfile: {
-      extensions: ['/path/to/extensionA.xpi', '/path/to/extensionB.xpi'],
-      'browser.startup.homepage': 'http://webdriver.io'
+    extensions: [
+      '/path/to/extensionA.xpi', // path to .xpi file
+      '/path/to/extensionB' // or path to unpacked Firefox extension
+    ],
+    'browser.startup.homepage': 'http://webdriver.io'
   },
   // ...
 };
