@@ -7,7 +7,7 @@ exports.config = {
     user: process.env.SAUCE_USERNAME,
     key: process.env.SAUCE_ACCESS_KEY,
 
-    specs: ['./test/test.spec.js'],
+    specs: [path.resolve(__dirname, 'test.spec.js')],
     capabilities: [{
         browserName: 'firefox',
         platform: 'OS X 10.11',
