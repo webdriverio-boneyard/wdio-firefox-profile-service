@@ -2,6 +2,7 @@ var chai = require('chai')
 var path = require('path')
 
 exports.config = {
+    protocol: 'http',
     port: 4445,
     host: 'localhost',
     user: process.env.SAUCE_USERNAME,
