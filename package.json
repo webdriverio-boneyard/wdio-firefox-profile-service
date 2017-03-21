@@ -17,7 +17,7 @@
     "release:major": "np major",
     "test": "run-s eslint test:e2e",
     "test:e2e": "wdio ./test/wdio.conf.js",
-    "prepublish": "npm prune && run-s build test",
+    "prepublish": "npm prune && run-s build",
     "watch": "npm run compile -- --watch"
   },
   "repository": {
