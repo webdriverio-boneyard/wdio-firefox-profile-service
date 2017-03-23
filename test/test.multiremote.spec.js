@@ -1,6 +1,6 @@
 describe('firefox profile service', function () {
     it('should have a firefox profile in the capabilties', function () {
-        browser.desiredCapabilities.should.have.property('firefox_profile')
+        firefox.desiredCapabilities.should.have.property('firefox_profile')
     })
 
     it('should have set preferences properly', function () {

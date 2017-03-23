@@ -11,12 +11,14 @@ exports.config = {
     specs: [path.resolve(__dirname, 'test.multiremote.spec.js')],
     capabilities: {
         firefox: {
-            browserName: 'firefox',
-            platform: 'OS X 10.11',
-            version: '45.0',
-            name: 'wdio-firefox-profile-service',
-            build: 'wdio-firefox-profile-service - ' + process.env.TRAVIS_BUILD_NUMBER,
-            'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER
+            desiredCapabilities: {
+                browserName: 'firefox',
+                platform: 'OS X 10.11',
+                version: '45.0',
+                name: 'wdio-firefox-profile-service',
+                build: 'wdio-firefox-profile-service - ' + process.env.TRAVIS_BUILD_NUMBER,
+                'tunnel-identifier': process.env.TRAVIS_JOB_NUMBER
+            }
         }
     },
     baseUrl: 'http://google.com',
