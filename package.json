@@ -16,7 +16,9 @@
     "release:minor": "np minor",
     "release:major": "np major",
     "test": "run-s eslint test:e2e",
-    "test:e2e": "wdio ./test/wdio.conf.js",
+    "test:e2e": "run-p test:e2e:**",
+    "test:e2e:remote": "wdio ./test/wdio.conf.js",
+    "test:e2e:multiremote": "wdio ./test/wdio.multiremote.conf.js",
     "prepublish": "npm prune && run-s build",
     "watch": "npm run compile -- --watch"
   },
