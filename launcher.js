@@ -1,2 +1,2 @@
-var FirefoxProfileLaunchService = require('./build/firefox-profile-launch-service').default
+var FirefoxProfileLaunchService = require('./build/firefox-profile-launch-service')
 module.exports = new FirefoxProfileLaunchService()
