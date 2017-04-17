@@ -31,7 +31,7 @@
     "url": "https://github.com/webdriverio/wdio-firefox-profile-service/issues"
   },
   "dependencies": {
-    "firefox-profile": "^1.0.0"
+    "firefox-profile": "~1.0.0"
   },
   "devDependencies": {
     "babel-cli": "^6.18.0",
