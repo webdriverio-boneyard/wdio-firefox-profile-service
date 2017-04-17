@@ -3,11 +3,5 @@
   "rules": {
     "indent": [2, 4]
   },
-  "parser": "babel-eslint",
-  "globals": {
-    "expect": true,
-    "describe": true,
-    "it": true,
-    "browser": true
-  }
+  "parser": "babel-eslint"
 }
