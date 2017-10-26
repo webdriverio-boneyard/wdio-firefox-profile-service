@@ -3,6 +3,10 @@ describe('firefox profile service', function () {
         browser.desiredCapabilities.should.have.property('firefox_profile')
     })
 
+    it('should have a firefox options in the capabilties', function () {
+        browser.desiredCapabilities.should.have.property('moz:firefoxOptions')
+    })
+
     it('should have set preferences properly', function () {
         browser.getUrl().should.be.equal('http://webdriver.io/')
     })
