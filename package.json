@@ -1,6 +1,6 @@
 {
   "name": "wdio-firefox-profile-service",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "WebdriverIO service to create a Firefox profile",
   "author": "Christian Bromann <christian@saucelabs.com>",
   "license": "MIT",
